@@ -1,6 +1,5 @@
 # This workflow will build and test the Angular app on push and pull request
 name: CI
-
 on:
   push:
     branches: [ main ]
