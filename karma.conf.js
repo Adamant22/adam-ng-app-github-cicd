@@ -25,15 +25,15 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
+    autoWatch: false,
     customLaunchers: {
       ChromeHeadlessCI: {
         base: 'ChromeHeadless',
-        flags: ['--no-sandbox', '--disable-gpu']
+        flags: ['--no-sandbox', '--disable-gpu', '--headless', '--disable-dev-shm-usage', '--remote-debugging-port=9222']
       }
     },
     browsers: ['ChromeHeadlessCI'],
-    singleRun: false,
+    singleRun: true,
     restartOnFileChange: true,
     files: [
       { pattern: './src/test.ts', watched: false }
