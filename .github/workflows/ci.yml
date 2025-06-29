@@ -1,10 +1,10 @@
-# This workflow will build and test the Angular app on push and pull request
+# This workflow will build and test the Angular app on all commits and pull requests
 name: CI
 on:
   push:
-    branches: [ main ]
+    branches: ["**"]
   pull_request:
-    branches: [ main ]
+    branches: ["**"]
 
 jobs:
   build:
