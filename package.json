@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --browsers=ChromeHeadless --watch=false",
+    "node:test": "node --test",
     "serve:ssr:adam-ng-app-github-cicd": "node dist/adam-ng-app-github-cicd/server/server.mjs",
     "clean": "node clean.js"
   },
