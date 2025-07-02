@@ -1,8 +1,7 @@
 import { join } from 'node:path';
 
 
-import express from 'express';
-import { Express } from 'express-serve-static-core';
+import express, { Express } from 'express';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
@@ -77,7 +76,9 @@ export const angularApp = {
   },
 };
 
-export function writeResponseToNodeResponse(response: any, res: any) {
+import { Response as ExpressResponse } from 'express';
+
+export function writeResponseToNodeResponse(response: unknown, res: ExpressResponse) {
   // Implement logic to write the Angular response to the Express response
   res.send(response);
 }

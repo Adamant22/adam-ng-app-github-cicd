@@ -3,6 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "composite": true,
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -25,7 +26,7 @@
     "typeCheckHostBindings": true,
     "strictTemplates": true
   },
-  "files": ["./app"],
+  "files": [],
   "references": [
     {
       "path": "./tsconfig.app.json"
