@@ -8,6 +8,10 @@
       "jasmine"
     ]
   },
+  "files": [
+    "src/polyfills.ts",
+    "src/test.ts"
+  ],
   "include": [
     "src/**/*.ts"
   ]

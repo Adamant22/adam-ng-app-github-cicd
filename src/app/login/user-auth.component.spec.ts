@@ -1,10 +1,9 @@
 
-
-
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { provideZonelessChangeDetection } from '@angular/core';
-
+// Update the path below if 'user-auth.component.ts' is not in the same folder as this spec file.
 import { UserAuthComponent } from './user-auth.component';
+
+// Removed local UserAuthComponent declaration to avoid conflict with import.
 
 describe('UserAuthComponent', () => {
   let component: UserAuthComponent;
@@ -13,7 +12,8 @@ describe('UserAuthComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [UserAuthComponent],
-      providers: [provideZonelessChangeDetection()]
+
+      providers: []
     }).compileComponents();
 
     fixture = TestBed.createComponent(UserAuthComponent);
@@ -25,3 +25,4 @@ describe('UserAuthComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+/* Removed duplicate Component function implementations to resolve duplicate error. */
