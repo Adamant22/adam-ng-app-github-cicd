@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.sass'
 })
 export class App {
-  protected title = 'adam-ng-app-github-cicd';
+  protected title = "Adam's ng App!";
 }
