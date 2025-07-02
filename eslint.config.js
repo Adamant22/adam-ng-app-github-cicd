@@ -32,6 +32,7 @@ export default [
       ...eslintPluginImport.configs.typescript.rules,
       '@typescript-eslint/no-unused-vars': ['warn', { args: 'after-used', argsIgnorePattern: '^_' }],
       'import/order': ['warn', { 'newlines-between': 'always' }],
+      'import/no-unresolved': 'off',
     },
   },
   {
